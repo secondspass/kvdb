@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>kvdb</title>
+  </head>
+
+<form action="/get" method="post">
+  <label for="key">Key</label><br>
+  <input type="text" id="key" name="key"><br>
+  <div>{{ . }}</div>
+  <input type="submit" value="Get">
+  </form>
+
+<form action="/put" method="post">
+  <label for="key">Key</label>
+  <input type="text" id="key" name="key"><br>
+  <label for="val">Value</label>
+  <input type="text" id="val" name="val"><br>
+  <input type="submit" value="Put">
+  </form>
+
+</html>
